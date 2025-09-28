@@ -1,6 +1,15 @@
 # Splash 📸
 
-Welcome to **Splash**, a modern and responsive photography portfolio website designed to showcase the artistry of Michael Nwankwo. With a clean layout and intuitive navigation, Splash transforms moments into masterpieces.
+Welcome to **Splash**, a responsive fictional photography portfolio website designed to demonstrate modern web design principles and user experience best practices. With a clean layout and intuitive navigation, Splash transforms moments into masterpieces.
+
+## 📑 Table of Contents
+- Features
+- Getting Started
+- Technologies Used
+- Folder Structure
+- Contact
+- License
+
 
 ## 🌟 Features
 
@@ -44,11 +53,11 @@ splash/
 ├── Splash.html
 └── README.md
 📬 Contact
-For collaborations or bookings, reach out via:
-
-Email: Mikaelicious99@gmail.com
-
-Phone: +2348067618559
+This project is for demonstration purposes only. Contact details are fictional and included for design realism.
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
