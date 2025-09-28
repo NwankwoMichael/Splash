@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta  name="description" content="Splash is a digital studio that is dedicated to capturing those time defining memories in frames, whilst encouraging a collaborative enviroment that encourages every client to be the best version of themselves."/>
+    <link rel="icon" href="../my-project/img/splash-favicon.png"/>
+    <link rel="apple-touch-icon" href="../my-project/img/splash-apple-in-touch.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="splash-styles/general-styles.css" />
+    <link rel="stylesheet" href="splash-styles/splash.css" />
+    <link rel="stylesheet" href="splash-styles/splash-queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+    <script defer src="splash-js/splash.js"></script>
+
+    <title>Splash Photo Studio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-box  flex">
+        <div class="logo-box">
+          <a class="main-logo-link" href="#">
+            <img
+              class="primary-logo"
+              src="img/splash-logo-png.png"
+              alt="photo of splash logo"
+            />
+          </a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="nav-list flex">
+            
+            <li class="nav-list-items">
+              <a class="nav-link btn--small" href="#section-gallery">Gallery</a>
+            </li>
+            <li class="nav-list-items">
+              <a class="nav-link btn--small" href="#section-about">About</a>
+            </li>
+            <li class="nav-list-items">
+              <a class="nav-link btn--small" href="#section-contact">Contact</a>
+            </li>
+            <li class="nav-list-items">
+              <a class="nav-link main-cta-link btn--small" href="#section-contact">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="mobile-nav-btn">
+        <ion-icon class="main-nav-icon menu" name="menu-outline"></ion-icon>
+        <ion-icon class="main-nav-icon close" name="close"></ion-icon>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section id="section-hero" class="section-hero container">
+        <img class="hero-background" loading="eager" fetchpriority="high" src="https://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aerial picture of a forest"/>
+        <div class="hero container">
+          <div class="hero-box">
+            <h1><a href="#" class="hero-artist">@Michael_Nwankwo</a></h1>
+            <span class="hero-tagline"
+            >Transforming moments into masterpieces.</span
+            >
+            <div class="reviews flex">
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p>6,ooo&plus; Five-Star reviews.</p>
+            </div>
+            <a class="primary-cta btn--big" href="#section-contact">Reach out</a>
+          </div>
+        </div>
+      </section>
+      <!-- GALLERY SECTION -->
+      <section id="section-gallery" class="section-gallery container">
+        <h2 class="secondary-heading big--margin-bottom mobile-color">
+          The beautiful chaos of life preserved in frames
+        </h2>
+
+        <nav class="filter-nav flex">
+          <div class="link-icon-box flex">
+            <ion-icon
+              class="filter-icon"
+              name="phone-portrait-outline"
+            ></ion-icon>
+            <a class="filter potrait btn--small" href="#portrait">Portraits</a>
+          </div>
+          <div class="link-icon-box flex">
+            <ion-icon
+              class="filter-icon"
+              name="partly-sunny-outline"
+            ></ion-icon>
+            <a class="filter outdoor btn--small" href="#outdoor">outdoor</a>
+          </div>
+          <div class="link-icon-box flex">
+            <ion-icon class="filter-icon" name="heart-outline"></ion-icon>
+            <a class="filter wedding btn--small" href="#wedding">wedding</a>
+          </div>
+          <div class="link-icon-box flex">
+            <ion-icon class="filter-icon" name="folder-outline"></ion-icon>
+            <a class="filter others btn--small" href="#others">Others</a>
+          </div>
+        </nav>
+
+        <div class="filter-nav-btn">
+        <ion-icon class="filter-menu" name="filter-outline"></ion-icon>
+        <ion-icon class="filter-close" name="close"></ion-icon>
+        </div>
+        <div class="gallery container grid grid--5-cols">
+          <figure class="image-box flex flex--direction-col">
+            <img
+            loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1756680967220-be6bf89275a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjd8fHxlbnwwfHx8fHw%3D"
+              alt="Table with drinks overlooks colorful buildings."
+            />
+            <figcaption class="image-caption">
+              Table with drinks overlooks colorful buildings.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1757383670332-a5c77c1a33f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzF8fHxlbnwwfHx8fHw%3D"
+              alt="People resting on a mountain overlook at sunset."
+            />
+            <figcaption class="image-caption">
+              People resting on a mountain overlook at sunset.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="portrait"
+              class="image"
+              src="https://plus.unsplash.com/premium_photo-1757392183183-0e99b6c73437?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D"
+              alt="Woman wearing hairscarf and sunglasses outdoor."
+            />
+            <figcaption class="image-caption">
+              Woman wearing hairscarf and sunglasses outdoor.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="wedding"
+              class="image"
+              src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Newly married couple Walking on a field."
+            />
+            <figcaption class="image-caption">
+              Newly married couple Walking on a field.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1757444838044-d9dcb1bb3017?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTd8fHxlbnwwfHx8fHw%3D"
+              alt="Vintage arcade machine glowing with neon lights."
+            />
+            <figcaption class="image-caption">
+              Vintage arcade machine glowing with neon lights.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1743179581016-54b610372a02?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNjd8fHxlbnwwfHx8fHw%3D"
+              alt="A person walks through a dark, stone alley."
+            />
+            <figcaption class="image-caption">
+              A person walks through a dark, stone alley.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1757865579170-8d64d9aab467?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMTZ8fHxlbnwwfHx8fHw%3D"
+              alt="Green suitcase with travel stickers in airport terminals."
+            />
+            <figcaption class="image-caption">
+              Green suitcase with travel stickers in airport terminals.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="wedding"
+              class="image"
+              src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Man in blue suit kissing a woman in wedding dress."
+            />
+            <figcaption class="image-caption">
+              Man in blue suit kissing a woman in wedding dress.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1757375146427-0bc50e0ce844?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTZ8fHxlbnwwfHx8fHw%3D"
+              alt="People cycle past illuminated man sculpture at sunset."
+            />
+            <figcaption class="image-caption">
+              People cycle past illuminated man sculpture at sunset.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="portrait"
+              class="image"
+              src="https://images.unsplash.com/photo-1757608317604-a124f9930c67?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzV8fHxlbnwwfHx8fHw%3D"
+              alt="Woman in cowboy hat looks over her shoulder at sunset."
+            />
+            <figcaption class="image-caption">
+              Woman in cowboy hat looks over her shoulder at sunset.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1757851563530-5384e34a5ed2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3OXx8fGVufDB8fHx8fA%3D%3D"
+              alt="S'mores ingredients beside a campfire with chairs."
+            />
+            <figcaption class="image-caption">
+              S'mores ingredients beside a campfire with chairs.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="wedding"
+              class="image"
+              src="https://plus.unsplash.com/premium_photo-1664530452596-e1c17e342876?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Bride and groom standing in a barn."
+            />
+            <figcaption class="image-caption">
+              Bride and groom standing in a barn.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://plus.unsplash.com/premium_photo-1757100707909-705bdc2a60e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2NXx8fGVufDB8fHx8fA%3D%3D"
+              alt="Friends jumping into clear water with mountains behind."
+            />
+            <figcaption class="image-caption">
+              Friends jumping into clear water with mountains behind.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1757609210893-fd6f38231542?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OHx8fGVufDB8fHx8fA%3D%3D"
+              alt="People swimming in ocean near rocky shore."
+            />
+            <figcaption class="image-caption">
+              People swimming in ocean near rocky shore.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1757999524841-6f5efc86cbac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Man in patterned short jump into a lake."
+            />
+            <figcaption class="image-caption">
+              Man in patterned short jump into a lake.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="outdoor"
+              class="image"
+              src="https://images.unsplash.com/photo-1756982477676-420df08af67c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
+              alt="Family walking together on a grassy hill."
+            />
+            <figcaption class="image-caption">
+              Family walking together on a grassy hill.
+            </figcaption>
+          </figure>
+           <figure class="image-box flex flex--direction-col">
+              <img
+               loading="lazy"
+            width="300"
+            height="200"
+                id="outdoor"
+                class="image"
+                src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"
+                alt="Gray and beige gazebo near green leafed tree."
+              />
+              <figcaption class="image-caption">
+                "Gray and beige gazebo near green leafed tree.
+              </figcaption>
+            </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1607861884586-c7cfaed16290?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"
+              alt="White and brown concrete building during nighttime."
+            />
+            <figcaption class="image-caption">
+              White and brown concrete building during nighttime.
+            </figcaption>
+          </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="wedding"
+              class="image"
+              src="https://images.unsplash.com/photo-1606216836537-eea72a939072?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"
+              alt="Man in black suit kissing woman in wedding dress."
+            />
+            <figcaption class="image-caption">
+              Man in black suit kissing woman in wedding dress.
+            </figcaption>
+          </figure>
+          <div class="relative">
+            </figure>
+          <figure class="image-box flex flex--direction-col">
+            <img
+             loading="lazy"
+            width="300"
+            height="200"
+              id="others"
+              class="image"
+              src="https://images.unsplash.com/photo-1757704556607-8cd205e5ba10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDN8fHxlbnwwfHx8fHw%3D"
+              alt="Books and teddy bears on floor in dim light."
+            />
+            <figcaption class="image-caption">
+              Books and teddy bears on floor in dim light.
+            </figcaption>
+            <div class="box flex">
+              <a class="interpage" href="splash-gallery.html" target="_blank">More</a>
+              <ion-icon name="open-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section id="section-about" class="section-about">
+        <div class="about-header-box flex flex--direction-col">
+          <h2 class="subheading">About</h2>
+        </div>
+
+        <div class="about-layout grid grid--2-cols">
+          <div class="about-img-layout flex flex--direction-col">
+            <figure class="img-layout-box flex flex--direction-col">
+              <img
+                class="about-img"
+                src="https://pics.craiyon.com/2024-01-26/Qu1x6KcGQfy3ZFV5-OwwzA.webp"
+                alt="An animated image of a photographer"
+              />
+              <figcaption class="photographer">Michael_Nwankwo</figcaption>
+            </figure>
+          </div>
+          <div class="about-text-layout flex flex--direction-col">
+            <span class="about-subhead">Who am I?</span>
+            <p class="about-text">
+              "Hello, I'm Michael Nwankwo, and I'm passionate about capturing
+              the candid, genuine moments that tell a unique story."
+            </p>
+            <p class="about-text">
+              "With over a decade of experience in weddings, outdoor and
+              portrait photography, I specialize in creating a relaxed and
+              collaborative enviroment where your personality can shine
+              through."
+            </p>
+            <p class="about-text">
+              My approach is to blend documentary-style storytelling with
+              artistic composition, resulting in images that are both beautiful
+              and deeply personal."
+            </p>
+            <p class="about-text">
+              "My work has been recognized with several industry awards, and
+              I've had the previlege of working with wonderful clients both
+              locally and internationally."
+            </p>
+            <p class="about-text">
+              "I'm always excited to hear about your vision and discuss how we
+              can create something extraordinary together."
+            </p>
+            <p class="about-text">"Let's create something magical."</p>
+            <div class="btn--box">
+              <p class="about-text">
+                <a class="secondary-cta btn--medium" href="#section-contact">Contact me</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="section-contact" class="section-contact container">
+        <div class="contact-head-box flex center-flex">
+          <a class="logo-link" href="#">
+            <img
+              class="secondary-logo"
+              src="img/splash-logo-png.png"
+              alt="photo of splash logo"
+            />
+          </a>
+        </div>
+        <div class="contact-box">
+          <h2 class="secondary-heading center-text smaller-margin">
+            👋 welcome to Splash! 🎉
+          </h2>
+          <legend class="form-title center-text">Create your account</legend>
+          <form action="#" class="contact-form">
+            <label for="email" class="label">Email</label>
+            <input
+              class="input email"
+              type="email"
+              placeholder="Enter your valid email address"
+              required
+            />
+            <label for="name" class="label">Full name</label>
+            <input
+              class="input name"
+              type="text"
+              placeholder="What is your name?"
+              required
+            />
+            <label for="textarea" class="label">Message and remarks</label>
+            <textarea
+              class="textarea"
+              type="text"
+              cols="3"
+              rows="3"
+              placeholder="Send me a message or remark"
+            ></textarea>
+            <div class="check-input-box flex">
+              <input class="checkbox-input" type="checkbox" required />
+              <label for="checkbox-input-box" class="label"
+                >I've read and accepted the
+                <a class="checkbox-links link" href="#">Terms</a> and the
+                <a class="checkbox-links link" href="#">Privacy Policy</a> of
+                Splash
+              </label>
+            </div>
+            <div class="flex center-flex small-margin">
+              <button class="form-btn" type="submit" value="Submit">
+                Sign up now
+              </button>
+            </div>
+            <div class="flex center-flex">
+              <span class="subheading or">OR</span>
+            </div>
+            <div class="social-icon-box grid">
+              <span class="subheading">SIGN IN WITH...</span>
+              <!-- <a href="#" class="contact-link"> -->
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              <ion-icon class="social-icon" name="logo-pinterest"></ion-icon>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="footer-box container grid">
+        <div class="copyright flex flex--direction-col">
+          <span class="footer-subhead splash">Splash</span>
+          <div class="social-links flex">
+            <a href="#"
+              ><ion-icon
+                class="social-link-icon"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-link-icon"
+                name="logo-instagram"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon class="social-link-icon" name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-link-icon"
+                name="logo-pinterest"
+              ></ion-icon
+            ></a>
+          </div>
+          <div class="contact--box flex">
+            <ion-icon class="social-link-icon" name="mail-outline"></ion-icon>
+            <a href="mailto:mikaelicious99@gmail.com"
+              >Mikaelicious99@gmail.com</a
+            >
+          </div>
+          <div class="contact--box flex">
+            <ion-icon class="social-link-icon" name="call-outline"></ion-icon>
+            <a href="tel:+2348067618559">+2348067618559</a>
+          </div>
+          <p class="footer-text">
+            Copy-right &copy; 2022 by Splash, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <nav class="main-sect-links flex flex--direction-col">
+          <span class="footer-subhead navigation">Navigation</span>
+          <ul class="nav-items flex flex--direction-col">
+            <div class="footer-icon-box flex">
+              <ion-icon class="footer-icon" name="home-outline"></ion-icon>
+              <li class="nav-item"><a href="#section-hero">Home</a></li>
+            </div>
+            <div class="footer-icon-box flex">
+              <ion-icon class="footer-icon" name="images-outline"></ion-icon>
+              <li class="nav-item"><a href="#section-gallery">Gallery</a></li>
+            </div>
+            <div class="footer-icon-box flex">
+              <ion-icon class="footer-icon" name="person-outline"></ion-icon>
+              <li class="nav-item"><a href="#section-about">About</a></li>
+            </div>
+            <div class="footer-icon-box flex">
+              <ion-icon
+                class="footer-icon"
+                name="chatbubble-outline"
+              ></ion-icon>
+              <li class="nav-item"><a href="#section-contact">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="policy flex flex--direction-col">
+          <span class="footer-subhead policy">Policy </span>
+          <div class="footer-link-box">
+            <a href="#">Privacy</a>
+          </div>
+          <div class="footer-link-box">
+            <a href="#">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
