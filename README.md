@@ -55,6 +55,10 @@ splash/
 📬 Contact
 This project is for demonstration purposes only. Contact details are fictional and included for design realism.
 
+## 🔗 Live Demo
+
+[Try the splash here](https://nwankwomichael.github.io/Splash/)
+
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
